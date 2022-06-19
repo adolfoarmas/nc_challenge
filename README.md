@@ -15,7 +15,6 @@ djangorestframework==3.13.1
 pytz==2022.1
 sqlparse==0.4.2
 tzdata==2022.1
-
 ```
 
 ### Instalación 🔧
@@ -33,14 +32,12 @@ en Windows ejecutar los comandos:
 ```
 cd env/Scripts
 activate
-
 ```
 
 en Linux
 
 ```
 source env/bin/activate
-
 ```
 
 * Con el entorno virtual activado, instalar requerimientos:
@@ -204,7 +201,6 @@ Vary: Accept
         "bar_code": "123456789012"
     }
 ]
-
 ```
 
 *  Una consulta filtrando por fecha inicial (date_min) y fecha final (date_max), por ejemplo:  http://127.0.0.1:8000/transactions/?date_min=2022-06-18&date_max=2022-06-18 entregara un resumen de todas las transacciones realizadas en ese rango de fechas dia a dia (payment_date), sumando el monto de todas las transacciones (sum_payment_ammount) y haciendo un conteo de las mismas (total_transaction_ids). 
@@ -222,7 +218,6 @@ Vary: Accept
         "total_transaction_ids": 2
     }
 ]
-
 ```
 
 * El endpoint http://127.0.0.1:8000/transactions/ soporta la funcion POST, se debe enviar un objeto en formato json como el del siguiente ejemplo:
